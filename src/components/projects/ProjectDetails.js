@@ -180,7 +180,7 @@ if(profile.Doctor){
     <div className="container">
     <form className="" onSubmit={this.handleSubmit}>
     <div className="input-field">
-            <input type="text" step="any" id='command' style={{borderRadius:"10px",backgroundColor:"white",height:"100px"}} onChange={this.handleChange} />
+            <input type="text" step="any" id='comment' style={{borderRadius:"10px",backgroundColor:"white",height:"100px"}} onChange={this.handleChange} />
             <label htmlFor="content">ข้อแนะนำและวินิจฉัยเพิ่มเติม</label>
           </div>
           <div className="button">
