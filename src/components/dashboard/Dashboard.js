@@ -51,7 +51,7 @@ class Dashboard extends Component {
           {projects && projects.map(project => {
         
         
-          if (project.title == profile.firstName+profile.lastName) {
+          if (project.firstName == profile.firstName) {
 
             return (
               <Link to={'/project/' + project.id} key={project.id}   >

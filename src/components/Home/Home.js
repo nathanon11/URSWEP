@@ -39,7 +39,8 @@ class Home extends Component {
             <div class="infos" >
                 <h1 class="subtitle" >Welcome to</h1>
                 <h6 class="title">URS</h6>
-                Urinary tract stone risk screening system with AI
+                <p>Urinary tract stone risk screening system with AI</p>
+                <br></br>
                 <p>ระบบช่วยวินิจฉัยความเสี่ยงการเกิดนิ่วในระบบทางเดินปัสสาวะ</p>
                   <p > ด้วยระบบปัญญาประดิษฐ์</p>
               

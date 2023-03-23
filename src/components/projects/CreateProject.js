@@ -30,7 +30,8 @@ class CreateProject extends Component {
   }
 
   state = {
-    title: '',
+    firstName: '',
+    lastName: '',
     age: '' ,
     WBC: '',
     blood:'',
@@ -38,9 +39,12 @@ class CreateProject extends Component {
     ph: '',
     glu: '',
     ketone: '',
-    calox: '',
-   
-    Ai:"1"
+    WBC1:'0',
+    RBC:'0',
+    Sq:'0',
+    calox1:'0',
+    Ai:"1",
+    comment:''
   }
 
   handleChange = (e) => {
@@ -67,11 +71,15 @@ class CreateProject extends Component {
       <div className="container">
         <form className="" onSubmit={this.handleSubmit}>
           <h5 className="grey-text text-darken-3">เพิ่มข้อมูลผู้ป่วย</h5>
-          <div className="input-field"   >
-            <label htmlFor="title">ชื่อ - สกุล</label>
-            <input type="text"    id='title' style={{borderRadius:"10px",backgroundColor:"white"}} onChange={this.handleChange} />
-        
+          <div className="input-field">
+            <label htmlFor="firstName" >First Name</label>
+            <input type="text" id='firstName'  style={{borderRadius:"10px",backgroundColor:"white"}} onChange={this.handleChange} />
           </div>
+          <div className="input-field">
+            <label htmlFor="lastName" >Last Name</label>
+            <input type="text" id='lastName' style={{borderRadius:"10px",backgroundColor:"white"}} onChange={this.handleChange} />
+          </div>
+         
 
           <div className="input-field" >
             <input type="Number" id='age' style={{borderRadius:"10px",backgroundColor:"white"}} onChange={this.handleChange} />
@@ -106,7 +114,22 @@ class CreateProject extends Component {
             <input type="Number" step="any" id='ketone' style={{borderRadius:"10px",backgroundColor:"white"}}onChange={this.handleChange} />
             <label htmlFor="content">ketone of urine ( 0 - 16 )</label>
           </div>
-          
+          {/* <div className="input-field">
+            <input type="Number" step="any" id='WBC1' style={{borderRadius:"10px",backgroundColor:"white"}}onChange={this.handleChange} />
+            <label htmlFor="content">WBC of urine  </label>
+          </div>
+          <div className="input-field">
+            <input type="Number" step="any" id='RBC' style={{borderRadius:"10px",backgroundColor:"white"}}onChange={this.handleChange} />
+            <label htmlFor="content">RBC of urine </label>
+          </div>
+          <div className="input-field">
+            <input type="Number" step="any" id='Sq' style={{borderRadius:"10px",backgroundColor:"white"}}onChange={this.handleChange} />
+            <label htmlFor="content">Sq of urine </label>
+          </div>
+          <div className="input-field">
+            <input type="Number" step="any" id='calox1' style={{borderRadius:"10px",backgroundColor:"white"}}onChange={this.handleChange} />
+            <label htmlFor="content">calox of urine </label>
+          </div> */}
            <div className="input-field">
            <label htmlFor="content">Image calcium oxalate of urine (จำนวน 15 ภาพ)</label>
            <br></br>

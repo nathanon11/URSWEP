@@ -44,7 +44,7 @@ class SignIn extends Component {
         <h4 className="blue-text text-darken-4" style={{fontSize:'60px',marginTop:'25px' }}>Welcome </h4>
           <h5 className="grey-text text-darken-3" >Sign In</h5>
           <div className="input-field">
-            <label htmlFor="email"style={{fontSize:'18px',marginTop:'25px'}} >Email</label>
+            <label htmlFor="email"style={{fontSize:'18px',marginTop:'25px',}} >   Email</label>
             <input type="email" style={{ borderRadius:"20px", backgroundColor:"white",width:'70vh' }} id='email' onChange={this.handleChange} />
           </div>
           <div className="input-field">
